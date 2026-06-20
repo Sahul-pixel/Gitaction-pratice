@@ -1,0 +1,27 @@
+# workflow (No indention required for nameing the workflow
+# should have name
+name: sahul 
+
+#on tells when the workflow run
+on:
+  workflow_dispatch:
+  
+# jobs (job tell what the workflow will do, threr can one and more than one jobs.)
+#should be inside the workflow
+jobs:
+#1st job give indenton
+    say-hello:
+    #create an ephermeral contanier with ubuntu running 
+    #that ephermeral contanier will have step to execute, hence name those steps and use run: run has the command  
+    Run-on: unbuntu-latest
+    steps: 
+    - name: say hello to everone 
+      Run: echo "hello frinds"
+
+# steps
+#should be inside the job
+
+
+
+# actions
+#should be inside the step
